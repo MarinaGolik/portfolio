@@ -7,11 +7,25 @@
 a{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
 img{
     display: block;
     height: auto;
     max-width: 100%;
+
+    /* animation: blink 1s infinite 1s; */
 }
+/* @keyframes blink{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+} */
 ol, li{
     list-style: none;
 }
@@ -105,6 +119,7 @@ p{
     width: 900px;
     margin-left: 150px;
     border:solid 2px black;
+    
 }
 label{
     font-size: 22px;
@@ -128,6 +143,7 @@ textarea{
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    
 
 }
 .active__send{
@@ -138,16 +154,17 @@ textarea{
     border-radius: 8px;
     background-color:black;
     font-size: 26px;
+    transition: all 0.3s ease-in-out;
 
 }
 .information{
-    background-color: rgb(0, 170, 255);
+    
 
 }
 .information__text{
     text-align: center;
-     font-size: 24px;
-    line-height: 29px;
+     font-size: 26px;
+    line-height: 30px;
     font-weight: 600;
     padding-top:20px ;
 
@@ -156,5 +173,11 @@ textarea{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.footer{
+    background-color: rgb(0, 170, 255);
 }
