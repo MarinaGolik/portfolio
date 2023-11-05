@@ -2,44 +2,46 @@
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    width: 100%;   
+    width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
+    color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
     color: black;
 }
-img{
+
+img {
     display: block;
     height: auto;
     max-width: 100%;
 
-    /* animation: blink 1s infinite 1s; */
 }
-/* @keyframes blink{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-} */
-ol, li{
+
+
+ol,
+li {
     list-style: none;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
 }
-p{
+
+p {
     font-size: 24px;
     line-height: 29px;
     font-weight: 600;
 }
-.header{
+
+.header {
     background-color: rgb(0, 170, 255);
 }
 
@@ -47,61 +49,34 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgb(0, 255, 225); */
-    
-    
+
 }
+
 .navigation__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 21px;
-    width: 700;
+    font-weight: 700;
     line-height: 21px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-    
-}
-.navigation__item:not(:last-child){
-    margin-right:38px ;
-}
-.navigation__link:hover:after {
-  
-
-    }
-
-.preview {
-}
-.preview__title {
-}
-.preview__text {
-}
-.about {
-}
-.about__title {
-}
-.about__text {
-}
-.setting {
-   
-}
-.setting__title {
-}
-.setting__text {
 
 }
+
+.navigation__item:not(:last-child) {
+    margin-right: 38px;
+}
+
+
 .setting__picture {
-    display: flex;
-   justify-content: space-around;
-   align-items: center;
-   margin: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+    margin: 70px;
 }
-.game {
-}
-.game__title {
-}
-.game__text {
-}
+
 .game__picture {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,67 +84,74 @@ p{
     justify-items: center;
     margin: 70px;
 }
-.active{
+
+.active {
+    margin: 0px 150px;
+}
+
+.active__body {
     background-color: rgb(0, 170, 255);
-    /* background-color: rgb(0, 255, 225); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    width: 900px;
-    margin-left: 150px;
-    border:solid 2px black;
-    
+    max-width: 900px;
+    width: 100%;
+    border: solid 2px black;
 }
-label{
+
+label {
     font-size: 22px;
     line-height: 29px;
     font-weight: 600;
     text-transform: lowercase;
     text-align: center;
 }
-input{
+
+input {
     height: 30px;
     width: 220px;
     border-radius: 8px;
 }
-textarea{
+
+textarea {
     border-radius: 8px;
 
 }
-.active__text{
+
+.active__text {
     font-size: 26px;
     line-height: 29px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    
+
 
 }
-.active__send{
+
+.active__send {
     margin: 20px;
     height: 60px;
     width: 150px;
     color: rgb(254, 250, 250);
     border-radius: 8px;
-    background-color:black;
+    background-color: black;
     font-size: 26px;
     transition: all 0.3s ease-in-out;
 
 }
-.information{
-    
 
-}
-.information__text{
+
+.information__text {
     text-align: center;
-     font-size: 26px;
+    font-size: 26px;
     line-height: 30px;
     font-weight: 600;
-    padding-top:20px ;
-
+    padding-top: 20px;
+    text-transform: uppercase;
 }
-.information__link{
+
+.information__link {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -178,6 +160,282 @@ textarea{
     font-weight: 600;
     padding-bottom: 20px;
 }
-.footer{
+
+.footer {
     background-color: rgb(0, 170, 255);
+}
+
+@media screen and (max-width: 992px) {
+
+    h1,
+    h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600;
+    }
+
+    .container {
+        max-width: 912px;
+    }
+
+    .navigation__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .information__text {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600;
+        padding-top: 18px;
+    }
+
+    .information__link {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600;
+        padding-bottom: 18px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    h1,
+    h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    .container {
+        max-width: 576px;
+    }
+
+    .navigation__list {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+
+    .navigation__item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .information__text {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    .information__link {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    .active {
+        margin: 0px 120px;
+    }
+
+    .active__text {
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    .active__send {
+        margin: 18px;
+        height: 50px;
+        width: 150px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    h1,
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .container {
+        max-width: 480px;
+    }
+
+    .navigation__list {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+
+    .navigation__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .active {
+        margin: 0px 100px;
+    }
+
+    .information__text {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+
+    .information__link {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+
+    .active__text {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+
+    .active__send {
+        margin: 18px;
+        height: 50px;
+        width: 150px;
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .navigation__list {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: start;
+        /* font-weight: 200; */
+        line-height: 18px;
+        /* text-transform: lowercase;     */
+    }
+
+
+    .navigation__item:not(:last-child) {
+        margin-right: 15px;
+        margin-bottom: 2px;
+    }
+
+    .setting__picture {
+        display: block;
+        margin: 10px;
+    }
+
+    .image {
+        margin-bottom: 25px;
+    }
+
+    .game__picture {
+        display: block;
+        margin: 10px;
+    }
+
+    .information__text {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+
+    .information__link {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .active {
+        margin: 0px 40px;
+    }
+
+    .active__text {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .active__send {
+        margin: 18px;
+        height: 50px;
+        width: 150px;
+        font-size: 22px;
+    }
+
+    .information__text {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+        padding-top: 15px;
+    }
+
+    .information__link {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 200;
+        padding-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 280px;
+    }
+
+    .navigation__list {
+        font-size: 14px;
+        /* font-weight: 200; */
+        line-height: 18px;
+        /* text-transform: lowercase;     */
+    }
+
+    .information__text {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+
+    .information__link {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .active {
+        margin: 0px 25px;
+    }
+
+    .active__text {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
 }
