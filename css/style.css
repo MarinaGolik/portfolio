@@ -399,6 +399,7 @@ textarea {
         line-height: 20px;
         font-weight: 200;
         padding-bottom: 15px;
+        flex-direction: column;
     }
 
 }
@@ -409,10 +410,8 @@ textarea {
     }
 
     .navigation__list {
-        font-size: 14px;
-        /* font-weight: 200; */
+        font-size: 14px;      
         line-height: 18px;
-        /* text-transform: lowercase;     */
     }
 
     .information__text {
@@ -436,6 +435,9 @@ textarea {
         font-size: 20px;
         line-height: 22px;
         font-weight: 400;
+    }
+    textarea{
+        width: 215px;
     }
 
 }
