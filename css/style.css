@@ -371,7 +371,7 @@ textarea {
     }
 
     .active {
-        margin: 0px 40px;
+        margin: 0px 30px;
     }
 
     .active__text {
@@ -428,7 +428,7 @@ textarea {
     }
 
     .active {
-        margin: 0px 25px;
+        margin: 0px 10px;
     }
 
     .active__text {
@@ -436,8 +436,5 @@ textarea {
         line-height: 22px;
         font-weight: 400;
     }
-    textarea{
-        width: 215px;
-    }
-
+    
 }
